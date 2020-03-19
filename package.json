@@ -1,0 +1,36 @@
+{
+  "name": "booking-web",
+  "version": "1.0.0",
+  "description": "My spectacular Nuxt.js project",
+  "author": "Razielini",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "generate": "nuxt-ts generate",
+    "start": "nuxt-ts start",
+    "lint": "tslint -p tsconfig.json -c tslint.json"
+  },
+  "dependencies": {
+    "@nuxt/types": "^0.6.1",
+    "@nuxt/typescript-runtime": "latest",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "nuxt": "latest",
+    "nuxt-property-decorator": "^2.5.0",
+    "vue-class-component": "^7.0.2",
+    "vue-i18n": "^8.15.3",
+    "vue-property-decorator": "^8.3.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "latest",
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-config-typescript": "^1.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "nuxt-purgecss": "^0.2.1",
+    "eslint-plugin-nuxt": ">=0.4.2"
+  }
+}
