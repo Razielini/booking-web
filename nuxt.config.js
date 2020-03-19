@@ -1,4 +1,3 @@
-
 export default {
   mode: 'universal',
   /*
@@ -36,7 +35,8 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxt/typescript-build'
   ],
   /*
   ** Nuxt.js modules
@@ -44,7 +44,7 @@ export default {
   tailwindcss: {
     configPath: '~/plugins/tailwind.full.config.js',
     cssPath: '~/assets/css/tailwind.css',
-    purgeCSSInDev: true,
+    purgeCSSInDev: false,
     exposeConfig: false
   },
   purgeCSS: {
@@ -88,6 +88,6 @@ export default {
     }
   },
   server: {
-    port: 4100, // default: 3000
+    port: process.env.BASE_PORT | 4200 // default: 3000
   }
 }

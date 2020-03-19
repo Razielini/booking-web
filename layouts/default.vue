@@ -2,9 +2,25 @@
   <div
     class="bg-blue-100"
   >
+    <app-bar />
     <nuxt />
   </div>
 </template>
+
+<script lang="ts">
+import AppBar from '@/components/AppBar.vue'
+import { Component, Vue } from 'vue-property-decorator'
+
+@Component({
+  components: {
+    AppBar
+  }
+})
+
+export default class LayoutDefault extends Vue {
+  name: string = 'LayoutDefault'
+}
+</script>
 
 <style>
 html {
